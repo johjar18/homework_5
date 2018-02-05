@@ -86,10 +86,10 @@ Use NLTK for analyzing parts of speech. Use NLTK's default POS tagger and tagset
 a "verb" is anything that is tagged VB*
 
 What to turn in:
-A link to your GitHub repository 
-Screenshot of your github repository after the last push to github(example screenshot below)
-(Optional) a link to your GitHub repository for EC 1.
-(Optional) a link to your GitHub repository for EC 2.
+1. A link to your GitHub repository 
+2. Screenshot of your github repository after the last push to github(example screenshot below)
+3. (Optional) a link to your GitHub repository for EC 1.
+4. (Optional) a link to your GitHub repository for EC 2.
 
 Note:
 Be sure to commit everything (and push!) to your GitHub repo. At a minimum, your repo should include the following file, which you have modified:
