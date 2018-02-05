@@ -1,5 +1,5 @@
 
-SI 507 
+SI 206 
 Homework 5: OAuth and Caching
 
 Homework Objective:
@@ -81,7 +81,9 @@ Extra Credit 1 (2 pts)
 Twitter Boggle: Take two twitter accounts and analyze their tweets to find words they have in common and words that are unique to each account. Show the 5 most frequent different (unique) words for each account and the 5 most frequent common words (shared by both).
 
 Extra Credit 2 (2 pts)
-Implement a better caching strategy: Caching the tweets by URL is not the best approach for twitter data. This is because we aren’t checking if there is new data available on twitter. Modify the caching mechanism to instead cache by users and tweet ids such that you would fetch data from twitter if there is a new tweet from that user ( maybe check if there is a tweet ID beyond what you have in the cache)
+Fetch 25 tweets from the UMSI twitter account (https://twitter.com/umsi) and print the 10 most commonly occurring “Basic Verbs”. Also, ignore all stop words.(https://pythonspot.com/nltk-stop-words/)
+Use NLTK for analyzing parts of speech. Use NLTK's default POS tagger and tagset (this will use the UPenn treebank tagset)
+a "verb" is anything that is tagged VB*
 
 What to turn in:
 A link to your GitHub repository 
@@ -93,7 +95,7 @@ Note:
 Be sure to commit everything (and push!) to your GitHub repo. At a minimum, your repo should include the following file, which you have modified:
 hw5_twitter.py
 
-Do not upload secret.py ( this has your API key!)
+Do not upload secret.py ( this has your API key!). Use .gitignore (Was discussed and demoed in lecture 09)
 
 Push your code before the deadline. Please don’t commit after the deadline or you might lose points if the latest commit is after the deadline.
 
@@ -101,5 +103,5 @@ All code must be executable. Any code that does not run in Python3 will be given
 
 Example screenshot attached.
 
-![Screen Shot](https://raw.githubusercontent.com/SI507-206-W18/507-hw05-oauth-and-caching/master/ScreenShot.png)
+![Screen Shot](https://raw.githubusercontent.com/SI507-206-W18/206-hw05-oauth-caching/master/ScreenShot.png)
 
