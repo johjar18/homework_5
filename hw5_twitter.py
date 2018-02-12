@@ -45,20 +45,59 @@ new_file.close()
 
 
 #Code for Part 2:Analyze Tweets
+tweet_list= []
 for tweet_data in json_data:
     tweet_text= tweet_data['text']
     # print(tweet_text)
+    tweet_list.append(tweet_text)
+    # print(tweet_list)
 
-tokens = nltk.word_tokenize(tweet_text)
-freqDist = nltk.FreqDist(token for token in tokens if token.isalpha() and "http" not in token)
 
-for word, frequency in freqDist.most_common(5):
-    freq= word + " " + str(frequency)
-    print(freq)
+
+    #
+    # tokens = nltk.word_tokenize(all_list)
+    # print(tokens)
+    # freqDist = nltk.FreqDist(token for token in tokens if token.isalpha() and "http" not in token)
+    #
+    # for word, frequency in freqDist.most_common(5):
+    #
+    #     freq= word + " " + str(frequency)
+    #     print(freq)
+
+#
+# split_tweet= tweet_text.split()
+freq_dict = {}
+#
+#
+for freq_count in tweet_text.split(" "):
+    if freq_count in freq_dict:
+        freq_dict[freq_count] += 1
+    else:
+        freq_dict[freq_count] = 1
+
+print(freq_dict)
+#
+for key in sorted(freq_dict.keys()):
+    print ("%s: %s" % (key, freq_dict[key]))
+
+
+#     # tuple_freq= word, frequency
+#     # print(tuple_freq)
+
+
+
+# sorted_freq= sorted(freq_count, reverse=True)
+# print(sorted_freq)
+    # list_freq= list(freq)
+    # print(list_freq)
+
+# for items in freq:
+#     print(items)
+
 
 print("USER:" + username)
 print("TWEETS ANALYZED:" + " " + num_tweets)
-print("5 MOST FREQUENT WORDS:" + " " + (freq))
+print("5 MOST FREQUENT WORDS:" + " ")
 
 
 
